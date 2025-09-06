@@ -1,0 +1,4 @@
+686A6C - Dim gray
+4F6D7A - Payne's gray
+A1CDF4 - Light Sky Blue
+E8DCB9 - Dutch white
