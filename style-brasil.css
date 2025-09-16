@@ -140,6 +140,7 @@ main > ul > li > p {
 
     main > ul > li > p {
         font-size: 1em;
+        margin-top: -5px;
     }
 
     main ul li img {
