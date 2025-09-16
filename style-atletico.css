@@ -137,6 +137,16 @@ main > ul > li > p {
         gap: 150px;
     }
 
+    main img {
+        width: 250px;
+        height: 250px;
+    }
+
+    main > ul > li {
+    width: 250px;
+    height: 250px;
+    
+    }
     header img.logo {
         max-width: 240px;
         max-height: 140px;
@@ -174,6 +184,7 @@ main img {
     max-height: 300px;
     border-radius: 10px 10px 0px 0px;
 }
+
 main > a > p {
     font-size: 1.5em;
     font-family: monospace;
