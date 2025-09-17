@@ -80,7 +80,7 @@ main {
 }
 
 main ul {
-    padding-top: 100px;
+    padding-top: 250px;
     padding-bottom: 100px;
     width: 80%;
     margin: 0 auto;
@@ -139,6 +139,10 @@ main > ul > li > p {
         gap: 120px;
     }
 
+    main > ul > li > p {
+        font-size: 1.2em;
+        }
+
     header img.logo {
         max-width: 220px;
         max-height: 110px;
@@ -187,10 +191,4 @@ main img {
     max-width: 300px;
     max-height: 300px;
     border-radius: 10px 10px 0px 0px;
-}
-main > a > p {
-    font-size: 1.5em;
-    font-family: monospace;
-    color: white;
-    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.26);
 }
