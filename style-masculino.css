@@ -55,17 +55,27 @@ header img.home {
     border-radius: 50px;
 }
 
-header a.whatsapp {
+#menu-direita {
+    display: flex;
+    align-items: right;
+    justify-content: right;
     position: absolute;
-    right: 0;
-    padding-right: 15px;
+    padding: 0px;
+    right: 15px;
+    width: 155px;
+    gap: 15px;
 }
 
-header img.whatsapp {
+header img.imagem-menu {
     width: 70px;
     height: 50px; 
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
     border-radius: 50px;
+}
+
+header .imagem-menu:hover {
+    transform: scale(1.10);
+    transition-duration: 0.5s;
 }
 
 main {

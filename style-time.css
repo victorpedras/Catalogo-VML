@@ -37,12 +37,7 @@ header img.logo {
     max-height: 180px;
 }
 
-header a.whatsapp:hover {
-    transform: scale(1.10);
-    transition-duration: 0.5s;
-}
-
-header a.info:hover {
+header .imagem-menu:hover {
     transform: scale(1.10);
     transition-duration: 0.5s;
 }
@@ -69,10 +64,6 @@ header img.home {
     right: 15px;
     width: 155px;
     gap: 15px;
-}
-
-.menu-direita-botao {
-
 }
 
 header img.imagem-menu {
@@ -115,7 +106,7 @@ main > ul > li {
     border-radius: 10px;
 }
 
-main  ul  li:hover {
+main > ul > li:hover {
     background-color: #9b9b9b;
     transform: scale(1.1);
     transition-duration: 0.4s
@@ -179,11 +170,12 @@ main > ul > li > p {
         padding-left: 8px;
     }
 
-    header a.whatsapp {
-        padding-right: 8px;
+    header #menu-direita {
+        gap: 8px;
+        right: 8px;
     }
     
-    header img.whatsapp {
+    header img.imagem-menu {
         width: 40px;
         height: 28px; 
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
