@@ -146,25 +146,27 @@ main > ul > li > p {
         justify-content: center;
         padding-bottom: 100px;
         padding-top: 100px;
-        gap: 150px;
+        gap: 120px;
     }
 
     main > ul > li > p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         }
 
     header img.logo {
-        max-width: 240px;
-        max-height: 140px;
+        max-width: 220px;
+        max-height: 110px;
     }
 
     header {
-        max-height: 40px;
-        padding: 10px;
+        max-height: 32px;
+        padding: 8px 9px 8px 9px;
+        margin: -4px;
+        border-radius: 15px;
     }
     header img.home {
-        width: 49px;
-        height: 35px; 
+        width: 40px;
+        height: 28px; 
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
         border-radius: 50px;
     }
@@ -173,16 +175,18 @@ main > ul > li > p {
         padding-left: 8px;
     }
 
-    header a.whatsapp {
-        padding-right: 8px;
+    header #menu-direita {
+        gap: 8px;
+        right: 8px;
     }
     
-    header img.whatsapp {
-        width: 49px;
-        height: 35px; 
+    header img.imagem-menu {
+        width: 40px;
+        height: 28px; 
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
         border-radius: 50px;
     }
+    
     main > ul > li > img {
         width: 250px;
         height: 250px;
