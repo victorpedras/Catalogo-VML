@@ -117,7 +117,24 @@ main ul li img {
     border-radius: 20px 00px 0px 20px;    
 }
 
-main ul li h1 {
-    padding: 20px 0px 0px 28px;
-    color: var(--cinza-azulado);
+main ul li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main ul li div h1 {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 35px 0px 40px;
+    color: var(--cinza-escuro);
+}
+
+main ul li div p {
+    align-items: bottom;
+    padding: 15px 35px 0px 40px;
+    color: black;
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
 }
