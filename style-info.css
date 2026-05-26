@@ -16,22 +16,23 @@
 
 body {
     background-color: var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
 }
 
 header {
-    top: 15px;
-    left: 30px;
-    right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     z-index: 10;
-    width: 100%;
+    width: 80%;
     background-color: var(--cinza-azulado);
     max-width: 1380px;
     height: 60px;
-    margin: auto;
+    margin: 15px;
     border-radius: 20px;
     padding: 10px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.308);
@@ -90,80 +91,12 @@ main {
     min-height: 100vh;
     max-width: 1400px;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0px 215px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
-}
-
-@media (max-width: 1000px) {
-    main ul {
-        grid-template-columns: repeat(3, auto);
-        justify-content: center;
-    }
-}
-
-/* Celular: 1 coluna */
-@media (max-width: 650px) {
-    main ul {
-        grid-template-columns: auto;
-        justify-content: center;
-        padding-bottom: 100px;
-        padding-top: 100px;
-        gap: 120px;
-    }
-
-    main > ul > li > p {
-        font-size: 1.2em;
-        }
-
-    header img.logo {
-        max-width: 220px;
-        max-height: 110px;
-    }
-
-    header {
-        max-height: 32px;
-        padding: 8px 9px 8px 9px;
-        margin: -4px;
-        border-radius: 15px;
-    }
-    header img.home {
-        width: 40px;
-        height: 28px; 
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
-        border-radius: 50px;
-    }
-
-    header a.home {
-        padding-left: 8px;
-    }
-
-    header #menu-direita {
-        gap: 8px;
-        right: 8px;
-    }
-    
-    header img.imagem-menu {
-        width: 40px;
-        height: 28px; 
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
-        border-radius: 50px;
-    }
-    
-    main > ul > li > a > img {
-        width: 200px;
-        height: 200px;
-    }
-
-    main > ul > li {
-        width: 200px;
-        height: 200px;
-    }
 }
 
 /* Slider */
 .slider {
-    margin: 0 auto;
     width: 1000px;
     height: 400px;
     overflow: hidden;
@@ -280,13 +213,232 @@ main {
 }
 
 .conteudo h1 {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 0px 0px 5px 50px;
 }
 
 .conteudo p {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 19px;
     text-align: justify;
     padding: 0px 50px 0px 50px;
+}
+
+@media (max-width: 1000px) {
+    main{
+        padding: 0px 180px;
+        margin: 0px;
+    }
+
+     .slider{
+        max-width: 300px;
+        height: 520px;
+    }
+
+    .slides{
+        height: 520px;
+    }
+
+    .slide{
+        height: 520px;
+        flex-direction: column;
+    }
+
+    .slide img {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .slide div{
+        max-width: 300px;
+        height: 220px;
+    }
+
+    .navigation-auto{
+        max-width: 300px;
+        margin-top: 480px;
+    }
+    
+    .manual-navigation{
+        max-width: 300px;
+    }
+
+    .conteudo h1{
+        font-size: 15px;
+        padding: 0px 0px 5px 20px;
+        margin-top: -40px;
+    }
+
+    .conteudo p{
+        font-size: 13px;
+        padding: 0px 15px 0px 20px;   
+    }
+
+    .navigation-auto div{
+        border: 0.5px solid var(--azul-claro);
+    }
+
+    .manual-btn{
+        border: 0.5px solid var(--azul-claro);
+    }
+
+    header img.logo {
+        max-width: 220px;
+        max-height: 110px;
+    }
+
+    header {
+        max-height: 32px;
+        max-width: 560px;
+        padding: 8px 20px 8px 20px;
+        border-radius: 15px;
+    }
+
+    header img.home {
+        width: 40px;
+        height: 28px; 
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+        border-radius: 50px;
+    }
+
+    header a.home {
+        padding-left: 8px;
+    }
+
+    header #menu-direita {
+        gap: 8px;
+        right: 8px;
+    }
+    
+    header img.imagem-menu {
+        width: 40px;
+        height: 28px; 
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+        border-radius: 50px;
+    }
+}
+
+
+/*Slider Celular*/
+@media (max-width: 650px) {
+    main {
+        padding: 0px 55px;
+        margin: 0px;
+    }
+    .slider{
+        max-width: 300px;
+        height: 520px;
+    }
+
+    .slides{
+        height: 520px;
+    }
+
+    .slide{
+        height: 520px;
+        flex-direction: column;
+    }
+
+    .slide img {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .slide div{
+        max-width: 300px;
+        height: 220px;
+    }
+
+    .navigation-auto{
+        max-width: 300px;
+        margin-top: 480px;
+    }
+    
+    .manual-navigation{
+        max-width: 300px;
+    }
+
+    .conteudo h1{
+        font-size: 15px;
+        padding: 0px 0px 5px 20px;
+        margin-top: -40px;
+    }
+
+    .conteudo p{
+        font-size: 13px;
+        padding: 0px 15px 0px 20px;   
+    }
+
+    .navigation-auto div{
+        border: 0.5px solid var(--azul-claro);
+    }
+
+    .manual-btn{
+        border: 0.5px solid var(--azul-claro);
+    }
+}
+
+@media (max-width: 650px) {
+    main{
+        margin: auto;
+    }
+
+    main ul {
+        grid-template-columns: auto;
+        justify-content: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        gap: 120px;
+    }
+
+    main > ul > li > p {
+        font-size: 1.2em;
+        }
+
+    header img.logo {
+        max-width: 220px;
+        max-height: 110px;
+    }
+
+    header {
+        max-height: 32px;
+        max-width: 360px;
+        padding: 8px 20px 8px 20px;
+        border-radius: 15px;
+    }
+
+    header img.home {
+        width: 40px;
+        height: 28px; 
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+        border-radius: 50px;
+    }
+
+    header a.home {
+        padding-left: 8px;
+    }
+
+    header #menu-direita {
+        gap: 8px;
+        right: 8px;
+    }
+    
+    header img.imagem-menu {
+        width: 40px;
+        height: 28px; 
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+        border-radius: 50px;
+    }
+    
+    main > ul > li > a > img {
+        width: 200px;
+        height: 200px;
+    }
+
+    main > ul > li {
+        width: 200px;
+        height: 200px;
+    }
 }
